@@ -6,9 +6,7 @@ const generateJwtToken = (user_id) => {
   return token;
 }
 
-const comparePassword = (candidatePassword, cryptPassword) => {
-  return bcrypt.compare(candidatePassword, cryptPassword);
-}
 
 
-module.exports = { generateJwtToken, comparePassword }
+
+module.exports = { generateJwtToken }

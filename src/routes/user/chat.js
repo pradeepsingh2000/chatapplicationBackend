@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const Validator = require("../../middleware/validator");
 const Schema = require("../../validation/user");
-const { CheckUser } = require("../../middleware/comman");
 const {
   createMessage,
   messages,

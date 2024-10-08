@@ -1,8 +1,7 @@
 const ChatList = require("../../models/chatlist");
 const Message = require("../../models/message");
 const Rooms = require("../../models/rooms");
-const { ObjectId } = require('mongoose').Types;  // If using mongoose
-
+const { ObjectId } = require('mongoose').Types;  
 
 const rooms = async () => {
   try {

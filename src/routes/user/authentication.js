@@ -12,11 +12,6 @@ router.post(
 
 
 
-// router.get('/profile',
-//   userAuth,
-//   userProfile
-// )
-
 
 router.all("*", (req, res) => {
   res.status(404).json({ error: 'invalid route' });

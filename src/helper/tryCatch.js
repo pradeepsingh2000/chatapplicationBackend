@@ -1,6 +1,5 @@
 
 const responseHandler = require('../utils/responseHandler')
-const logger = require('../utils/logger');
 
 
 const tryCatchFn = (fn) => {
@@ -12,7 +11,6 @@ const tryCatchFn = (fn) => {
         error.message,
         { error }
       )
-      logger.error(typeof error === "Array" ? JSON.stringify(error) : error.stack);
       next(error);
 
     });
